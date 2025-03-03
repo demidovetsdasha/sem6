@@ -1,7 +1,7 @@
 import React from 'react';
 
-function PixelPlot({ width, height, pixelData }) {
-  const pixelSize = 35; // Размер каждого пикселя в пикселях
+function PixelPlot({ width, height, pixelData, isAutoSize = false}) {
+  const pixelSize = isAutoSize ? 420/width : 35; // Размер каждого пикселя в пикселях
 
   return (
     <div

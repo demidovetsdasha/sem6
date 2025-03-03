@@ -4,15 +4,16 @@ export async function draw(p, drawPoint) {
     let y = 0;
     
     // Ограничение по осям (15 пикселей)
-    let limitX = 13;
-    let limitY = 13;
+    let limitX = 14;
+    let limitY = 14;
     
     // Функция проверки близости точки к параболе
     function checkPoint(x, y) {
         return Math.abs((y * y / (2 * p)) - x);
     }
-    
-    await drawPoint(x, y); // Рисуем начальную точку
+
+    await drawPoint(x, y);
+    await drawPoint(x, -y); // Рисуем начальную точку
     
     while (x <= limitX && y <= limitY) {
         // Вычисляем три потенциальные следующей точки
@@ -32,5 +33,6 @@ export async function draw(p, drawPoint) {
         y = nextPoint.y;
         
         await drawPoint(x, y);
+        await drawPoint(x, -y);
     }
 }

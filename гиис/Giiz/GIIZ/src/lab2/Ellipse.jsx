@@ -4,7 +4,7 @@ import PixelPlot from "../base/plot/PixelPlot";
 
 function Ellipse({ a, b, draw }) {
   const [pixelData, setPixelData] = useState(
-    Array.from({ length:  a > b ? a + 3 : b + 3}, () => Array.from({ length: a > b ? a + 3 : b + 3}, () => 0))
+    Array.from({ length:  a > b ? 2*a + 5 : 2*b + 5}, () => Array.from({ length: a > b ? 2*a + 5 : 2*b + 5}, () => 0))
   );
   const [isDrawing, setIsDrawing] = useState(false);
   const [nextStep, setNextStep] = useState(false);
@@ -49,7 +49,7 @@ function Ellipse({ a, b, draw }) {
 
     setPixelData((prevData) => {
       const newData = prevData.map(row => [...row]); // Копируем предыдущие данные
-      newData[Math.floor(y)][Math.floor(x)] = intensity; // Обновляем интенсивность пикселя
+      newData[Math.floor((a > b ? 2*a + 5 : 2*b + 5)/2) + Math.floor(y)][Math.floor((a > b ? 2*a + 5 : 2*b + 5)/2) + Math.floor(x)] = intensity; // Обновляем интенсивность пикселя
       return newData;
     });
 
@@ -79,9 +79,10 @@ function Ellipse({ a, b, draw }) {
     <>
       <div style={{ padding: "25px", textAlign: "left" }}>
         <PixelPlot
-          width={a > b ? a + 3 : b + 3}
-          height={a > b ? a + 3 : b + 3}
+          width={a > b ? 2*a + 5 : 2*b + 5}
+          height={a > b ? 2*a + 5 : 2*b + 5}
           pixelData={pixelData}
+          isAutoSize={true}
         />
         <div style={{margin: "25px"}}>
           <ControlButton text={'Next step'} onClick={onNextStepClick} />

@@ -5,7 +5,10 @@ export async function draw(a, b, drawPoint) {
 
     let delta = a*a + b*b - 2*a*a*b;
 
-    drawPoint(x, y);
+    await drawPoint(x, y);
+    await drawPoint(-x, y);
+    await drawPoint(x, -y);
+    await drawPoint(-x, -y);
 
     while(y > limit) {
         if(delta > 0) {
@@ -17,6 +20,9 @@ export async function draw(a, b, drawPoint) {
                 delta = delta - a*a*(1 - 2*y);
 
                 await drawPoint(x, y);
+                await drawPoint(-x, y);
+                await drawPoint(x, -y);
+                await drawPoint(-x, -y);
 
                 continue;
             }
@@ -30,6 +36,9 @@ export async function draw(a, b, drawPoint) {
                 delta = delta + b*b*(2*x+1);
 
                 await drawPoint(x, y);
+                await drawPoint(-x, y);
+                await drawPoint(x, -y);
+                await drawPoint(-x, -y);
 
                 continue;
             }
@@ -40,5 +49,8 @@ export async function draw(a, b, drawPoint) {
         delta = delta + b*b*(2*x+1) + a*a*(1 - 2*y);
 
         await drawPoint(x, y);
+        await drawPoint(-x, y);
+        await drawPoint(x, -y);
+        await drawPoint(-x, -y);
     }
 }

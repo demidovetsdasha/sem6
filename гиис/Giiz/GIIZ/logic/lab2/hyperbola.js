@@ -15,7 +15,10 @@ export async function draw(a, b, drawPoint) {
         return Math.abs((x * x / (a * a)) - (y * y / (b * b)) - 1);
     }
     
-    await drawPoint(x, y); // Рисуем начальную точку
+    await drawPoint(x, y);
+    await drawPoint(-x, y);
+    await drawPoint(x, -y);
+    await drawPoint(-x, -y); // Рисуем начальную точку
     
     while (x <= limitX && y <= limitY) {
         // Вычисляем три потенциальные следующей точки
@@ -35,5 +38,8 @@ export async function draw(a, b, drawPoint) {
         y = nextPoint.y;
         
         await drawPoint(x, y);
+        await drawPoint(-x, y);
+        await drawPoint(x, -y);
+        await drawPoint(-x, -y);
     }
 }

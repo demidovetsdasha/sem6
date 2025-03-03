@@ -4,7 +4,7 @@ import PixelPlot from "../base/plot/PixelPlot";
 
 function Hyperbola({ a, b, draw }) {
   const [pixelData, setPixelData] = useState(
-    Array.from({ length:  15 }, () => Array.from({ length: 15}, () => 0))
+    Array.from({ length:  2*15 + 1 }, () => Array.from({ length: 2*15 + 1}, () => 0))
   );
   const [isDrawing, setIsDrawing] = useState(false);
   const [nextStep, setNextStep] = useState(false);
@@ -49,7 +49,7 @@ function Hyperbola({ a, b, draw }) {
 
     setPixelData((prevData) => {
       const newData = prevData.map(row => [...row]); // Копируем предыдущие данные
-      newData[Math.floor(y)][Math.floor(x)] = intensity; // Обновляем интенсивность пикселя
+      newData[Math.floor(31/2) + Math.floor(y)][Math.floor(31/2) + Math.floor(x)] = intensity; // Обновляем интенсивность пикселя
       return newData;
     });
 
@@ -79,9 +79,10 @@ function Hyperbola({ a, b, draw }) {
     <>
       <div style={{ padding: "25px", textAlign: "left" }}>
         <PixelPlot
-          width={15}
-          height={15}
+          width={2*15 + 1}
+          height={2*15 + 1}
           pixelData={pixelData}
+          isAutoSize={true}
         />
         <div style={{margin: "25px"}}>
           <ControlButton text={'Next step'} onClick={onNextStepClick} />

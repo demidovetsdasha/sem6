@@ -5,7 +5,10 @@ export async function draw(radius, drawPoint) {
 
     let delta = 2 - 2 * radius;
 
-    drawPoint(x, y);
+    await drawPoint(x, y);
+    await drawPoint(-x, y);
+    await drawPoint(x, -y);
+    await drawPoint(-x, -y);
 
     while(y > limit) {
         if(delta > 0) {
@@ -17,6 +20,9 @@ export async function draw(radius, drawPoint) {
                 delta = delta - 2*y  + 1;
 
                 await drawPoint(x, y);
+                await drawPoint(-x, y);
+                await drawPoint(x, -y);
+                await drawPoint(-x, -y);
 
                 continue;
             }
@@ -30,6 +36,9 @@ export async function draw(radius, drawPoint) {
                 delta = delta + 2*x + 1;
 
                 await drawPoint(x, y);
+                await drawPoint(-x, y);
+                await drawPoint(x, -y);
+                await drawPoint(-x, -y);
 
                 continue;
             }
@@ -40,5 +49,8 @@ export async function draw(radius, drawPoint) {
         delta = delta + 2*x - 2*y + 2;
 
         await drawPoint(x, y);
+        await drawPoint(-x, y);
+        await drawPoint(x, -y);
+        await drawPoint(-x, -y);
     }
 }

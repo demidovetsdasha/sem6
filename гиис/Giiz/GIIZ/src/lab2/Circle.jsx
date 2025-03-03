@@ -4,7 +4,7 @@ import PixelPlot from "../base/plot/PixelPlot";
 
 function Circle({ radius, draw }) {
   const [pixelData, setPixelData] = useState(
-    Array.from({ length:  radius + 3}, () => Array.from({ length: radius + 3}, () => 0))
+    Array.from({ length:  2*radius + 5}, () => Array.from({ length: 2*radius + 5}, () => 0))
   );
   const [isDrawing, setIsDrawing] = useState(false);
   const [nextStep, setNextStep] = useState(false);
@@ -49,7 +49,7 @@ function Circle({ radius, draw }) {
 
     setPixelData((prevData) => {
       const newData = prevData.map(row => [...row]); // Копируем предыдущие данные
-      newData[Math.floor(y)][Math.floor(x)] = intensity; // Обновляем интенсивность пикселя
+      newData[Math.floor((2*radius + 5)/2) + Math.floor(y)][Math.floor((2*radius + 5)/2) + Math.floor(x)] = intensity; // Обновляем интенсивность пикселя
       return newData;
     });
 
@@ -79,9 +79,10 @@ function Circle({ radius, draw }) {
     <>
       <div style={{ padding: "25px", textAlign: "left" }}>
         <PixelPlot
-          width={ radius + 3}
-          height={ radius + 3}
+          width={ 2*radius + 5}
+          height={ 2*radius + 5}
           pixelData={pixelData}
+          isAutoSize={true}
         />
         <div style={{margin: "25px"}}>
           <ControlButton text={'Next step'} onClick={onNextStepClick} />
