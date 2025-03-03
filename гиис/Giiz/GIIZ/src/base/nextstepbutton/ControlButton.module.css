@@ -1,0 +1,23 @@
+.button {
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    display: flex;
+    gap: 9px;
+    padding: 1px 3px 1px 29px;
+    max-width: 177px;
+    color: #000;
+    text-align: center;
+    font: 400 20px Inter, sans-serif;
+  }
+  
+  .text {
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  
+  .icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 47px;
+  }

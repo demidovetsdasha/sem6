@@ -1,0 +1,15 @@
+.container {
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 720px;
+    width: 1020px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 25px;
+  }

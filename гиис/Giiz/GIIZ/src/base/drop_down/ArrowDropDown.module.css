@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    max-width: 13px;
+    flex-direction: column;
+  }
+  
+  .icon {
+    aspect-ratio: 1.86;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    fill: var(--Schemes-On-Surface, #1d1b20);
+  }
