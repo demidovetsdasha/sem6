@@ -28,6 +28,8 @@ import ParabolaInput from '../../lab2/ParabolaInput';
 import ErmitInput from '../../lab3/ErmitInput';
 import BezierInput from '../../lab3/BezierInput';
 import BSplineInput from '../../lab3/BSplineInput';
+import Transform from '../../lab4/Transform';
+import Polygon from '../../lab5/Polygon';
 
 function Background() {
   const [firstDropdownValue, setFirstDropdownValue] = useState(null);
@@ -37,12 +39,14 @@ function Background() {
   const [name, setAlghorithmName] = useState(null);
   const [data, setData] = useState(null)
 
-  const firstDropdownItems = ["Segments", "Second order lines", "Curves"];
+  const firstDropdownItems = ["Segments", "Second order lines", "Curves", "Geometrical", "Polygon"];
 
   const dropdownMapping = {
     "Segments": ["CDA", "Brezenhem", "Vu"],
     "Second order lines": ["Circle", "Ellipse", "Hyperbola", "Parabola"],
     "Curves": ["Ermit", "Bezier Curve", "B-Spline"],
+    "Geometrical": ["Transform"],
+    "Polygon": ["Polygon"]
   };
 
   const alghorithmMapping = {
@@ -260,6 +264,18 @@ function Background() {
                     />
                 )
                 }
+            </> 
+            )} 
+
+            {name === "Transform" && (
+                <>
+                <Transform/>
+            </> 
+            )} 
+
+            {name === "Polygon" && (
+                <>
+                <Polygon/>
             </> 
             )} 
           </>
