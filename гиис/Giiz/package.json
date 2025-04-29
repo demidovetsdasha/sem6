@@ -2,6 +2,7 @@
   "dependencies": {
     "@types/three": "^0.175.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "d3-delaunay": "^6.0.4",
     "plotly.js": "^3.0.1",
     "react-plotly.js": "^2.6.0",
     "three": "^0.175.0"

@@ -36,24 +36,23 @@ export function grahamScan(points) {
         const angleB = Math.atan2(b.y - pivot.y, b.x - pivot.x);
 
         if (angleA !== angleB) return angleA - angleB;
-        return (a.x - pivot.x)**2 + (a.y - pivot.y)**2 - 
-               (b.x - pivot.x)**2 + (b.y - pivot.y)**2;
+        return (a.x - pivot.x) ** 2 + (a.y - pivot.y) ** 2 - 
+               ((b.x - pivot.x) ** 2 + (b.y - pivot.y) ** 2);
     });
 
     // Шаг 3: Построение выпуклой оболочки
     const hull = [sorted[0], sorted[1]];
     for (let i = 2; i < sorted.length; i++) {
-        let top = hull.length - 1;
         while (hull.length > 1) {
-            const a = hull[top - 1];
-            const b = hull[top];
-            const cross = (b.x - a.x) * (sorted[i].y - b.y) - 
-                        (b.y - a.y) * (sorted[i].x - b.x);
+            const a = hull[hull.length - 2];
+            const b = hull[hull.length - 1];
+            const c = sorted[i];
+            
+            const cross = (b.x - a.x) * (c.y - b.y) - (b.y - a.y) * (c.x - b.x);
             
             // Если поворот направо или коллинеарны, удаляем последнюю точку
-            if (cross >= 0) {
+            if (cross <= 0) {
                 hull.pop();
-                top--;
             } else {
                 break;
             }
@@ -63,6 +62,13 @@ export function grahamScan(points) {
 
     return hull;
 }
+
+// Функция построения вогнутого полигона (просто соединяет точки линиями)
+export function buildConcavePolygon(points) {
+    if (points.length < 3) return [];
+    return [...points, points[0]]; // Соединяем последнюю точку с первой
+}
+
 
 export function lineIntersection(line1, line2) {
     const x1 = line1.x1, y1 = line1.y1;

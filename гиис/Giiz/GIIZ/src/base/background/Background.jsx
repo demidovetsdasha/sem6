@@ -30,6 +30,10 @@ import BezierInput from '../../lab3/BezierInput';
 import BSplineInput from '../../lab3/BSplineInput';
 import Transform from '../../lab4/Transform';
 import Polygon from '../../lab5/Polygon';
+import NewPolygonEditor from '../../lab6/NewPolygon';
+import VoronoiDelaunay from '../../lab7/VoronoiDelaunay';
+import Transform3D from '../../lab8/Transform3D';
+import Transform2D from '../../lab8/Transform2D';
 
 function Background() {
   const [firstDropdownValue, setFirstDropdownValue] = useState(null);
@@ -39,14 +43,16 @@ function Background() {
   const [name, setAlghorithmName] = useState(null);
   const [data, setData] = useState(null)
 
-  const firstDropdownItems = ["Segments", "Second order lines", "Curves", "Geometrical", "Polygon"];
+  const firstDropdownItems = ["Segments", "Second order lines", "Curves", "Geometrical", "Polygon", "Diagramms", "Invisibles"];
 
   const dropdownMapping = {
     "Segments": ["CDA", "Brezenhem", "Vu"],
     "Second order lines": ["Circle", "Ellipse", "Hyperbola", "Parabola"],
     "Curves": ["Ermit", "Bezier Curve", "B-Spline"],
     "Geometrical": ["Transform"],
-    "Polygon": ["Polygon"]
+    "Polygon": ["Polygon", "NewPolygon"],
+    "Diagramms" : ["Diagramms"],
+    "Invisibles" : ["3D", "2D"]
   };
 
   const alghorithmMapping = {
@@ -276,6 +282,29 @@ function Background() {
             {name === "Polygon" && (
                 <>
                 <Polygon/>
+            </> 
+            )} 
+
+            {name === "NewPolygon" && (
+                <>
+                <NewPolygonEditor/>
+            </> 
+            )} 
+
+            {name === "Diagramms" && (
+                <>
+                <VoronoiDelaunay/>
+            </> 
+            )} 
+            {name === "3D" && (
+                <>
+                <Transform3D/>
+            </> 
+            )} 
+
+            {name === "2D" && (
+                <>
+                <Transform2D/>
             </> 
             )} 
           </>

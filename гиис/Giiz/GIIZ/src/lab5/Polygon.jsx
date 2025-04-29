@@ -240,7 +240,6 @@ function Polygon() {
             padding: "8px 16px",
             opacity: polygonType === "concave" ? 0.5 : 1
           }}
-          disabled={polygonType === "concave"}
         >
           Построить оболочку
         </button>
