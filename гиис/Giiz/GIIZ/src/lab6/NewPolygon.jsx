@@ -333,6 +333,19 @@ function NewPolygonEditor() {
         </button>
 
         <button
+  onClick={() => {
+    setFillSteps([]);
+    setCurrentStep(0);
+    setIsFilling(false);
+    setStatus("Заливка очищена");
+  }}
+  style={{ background: "#795548", color: "white", padding: "8px 16px" }}
+>
+  Очистить заливку
+</button>
+
+
+        <button
           onClick={() => {
             if (hullPoints.length < 3) {
               setStatus("Сначала постройте оболочку!");
@@ -363,6 +376,8 @@ function NewPolygonEditor() {
           >
             Проверить точку
           </button>
+
+          
         )}
       </div>
 

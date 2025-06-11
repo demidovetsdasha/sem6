@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<S>
+    <word text="Много" tag="ADV-PRO"/>
+    <VP>
+        <V>
+            <word text="рассказывали" tag="V"/>
+        </V>
+    </VP>
+    <word text="же" tag="PART"/>
+    <word text="как" tag="CONJ"/>
+    <word text="совершенно" tag="ADV"/>
+    <word text="случайно" tag="ADV"/>
+    <word text="он" tag="S-PRO"/>
+    <VP>
+        <V>
+            <word text="узнал" tag="V"/>
+        </V>
+    </VP>
+    <word text="так" tag="ADV-PRO"/>
+    <NP>
+        <word text="какого-то" tag="A-PRO=m"/>
+        <word text="офицера" tag="S"/>
+    </NP>
+    <word text="и" tag="CONJ"/>
+    <VP>
+        <V>
+            <word text="приблизил" tag="V"/>
+        </V>
+    </VP>
+    <P>
+        <word text="к" tag="PR"/>
+    </P>
+    <word text="себе" tag="S-PRO=dat"/>
+</S>

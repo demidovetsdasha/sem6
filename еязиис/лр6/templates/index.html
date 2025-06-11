@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialogue system for animals</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+    }
+
+    .sidebar {
+        width: 250px;
+        background-color: #f5f5f5;
+        border-right: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    .sidebar h3 {
+        margin-top: 0;
+        color: black;
+    }
+
+    .chat-list a {
+        display: block;
+        padding: 8px 12px;
+        margin: 4px 0;
+        text-decoration: none;
+        color: #333;
+        border-radius: 4px;
+    }
+
+    .chat-list a:hover {
+        background-color: #e0e0e0;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .button-row {
+        margin-top: 10px;
+    }
+
+    .button-row button {
+        margin-right: 10px;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    /* Новый стиль для элементов чата */
+    .chat-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .delete-chat-link {
+        color: #065f46;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .delete-chat-link:hover {
+        color: red;
+    }
+
+    /* Черная кнопка My Chats */
+    .sidebar h3 {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="sidebar">
+        <h3>My Сhats</h3>
+        <div class="chat-list" id="chatList">
+            <!-- Список чатов загружается динамически -->
+        </div>
+{#        <button onclick="loadChats()">Update list</button>#}
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to the Animal Dialogue System</h1>
+
+        <form id="createForm">
+            <label for="chat_name">New chat name:</label>
+            <input type="text" id="chat_name" name="chat_name" required>
+            <button type="submit">Create chat</button>
+        </form>
+
+        <div class="button-row">
+            <a href="/help"><button type="button">Help</button></a>
+        </div>
+    </div>
+
+    <script>
+        function loadChats() {
+            fetch('/get_chats')
+                .then(res => res.json())
+                .then(chats => {
+                    const list = document.getElementById('chatList');
+                    list.innerHTML = '';
+                    chats.forEach(chat => {
+                        const entry = document.createElement('div');
+                        entry.className = 'chat-entry';
+
+                        const link = document.createElement('a');
+                        link.href = `/chat/${encodeURIComponent(chat)}`;
+                        link.textContent = chat;
+
+                        const delLink = document.createElement('a');
+                        delLink.href = '#';
+                        delLink.textContent = 'Delete';
+                        delLink.className = 'delete-chat-link'; // Добавляем стиль для ссылки
+                        delLink.onclick = (e) => {
+                            e.preventDefault(); // Отменяем стандартное поведение ссылки
+                            if (confirm(`Удалить чат "${chat}"?`)) {
+                                fetch(`/delete_chat/${encodeURIComponent(chat)}`, { method: 'DELETE' })
+                                    .then(r => r.ok ? loadChats() : alert('Ошибка при удалении'));
+                            }
+                        };
+
+                        entry.appendChild(link);
+                        entry.appendChild(delLink);
+                        list.appendChild(entry);
+                    });
+                });
+        }
+
+        document.getElementById('createForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const chatName = document.getElementById('chat_name').value;
+            fetch('/create_chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_name: chatName })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.open(`/chat/${encodeURIComponent(chatName)}`, '_blank');
+                    loadChats(); // Обновляем список
+                } else {
+                    alert('Ошибка при создании чата');
+                }
+            });
+        });
+
+        // Загрузка списка чатов при загрузке страницы
+        loadChats();
+    </script>
+</body>
+</html>

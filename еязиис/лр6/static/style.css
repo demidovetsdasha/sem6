@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Сайдбар */
+.sidebar {
+  width: 250px;
+  background-color: #075e48;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+}
+.sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.chat-list {
+  list-style: none;
+  padding: 0;
+}
+.chat-list .chat-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e7d60;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.chat-list .chat-entry:hover {
+  background-color: #0b6650;
+}
+.chat-list .chat-entry a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.delete-chat-link {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+.delete-chat-link:hover {
+  color: #ffdddd;
+}
+
+/* Основная часть */
+.main-content {
+  flex-grow: 1;
+  background-color: #f9fafb;
+  padding: 40px;
+  overflow-y: auto;
+}
+.main-content h1 {
+  font-size: 26px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* Форма создания чата */
+form createForm,
+.button-row {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #374151;
+}
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #0e7d60;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background-color: #0b6650;
+}
+
+/* Кнопка Help */
+.button-row button {
+  padding: 8px 16px;
+  background-color: #e6f4ef;
+  color: #065f46;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button-row button:hover {
+  background-color: #d3ece5;
+}
+
+/* Блок справки */
+.help-container {
+  background-color: #ffffff;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin: 0 auto 20px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .main-content { padding: 20px; }
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #0e7d60;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.back-button:hover {
+  background-color: #0b6650;
+}
+
+/* Обновим .help-container под основной фон */
+.help-container {
+  background-color: #f9fafb; /* как у .main-content */
+  color: #111827;
+}

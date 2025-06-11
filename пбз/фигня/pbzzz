@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/honor/ontologies/2025/4/pbzzz"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/honor/ontologies/2025/4/pbzzz">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Agama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Alligator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Beakhead"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#ClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Freshwater_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Gatteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Gekko"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#ReproductionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Snake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Tortoise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Varanus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#DietType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#livesInClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#reproducesBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#averageLifespan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#diet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#habitat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#poisoning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#African_helmeted_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#American_alligator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Asian_water_varanus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Ball_python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Chinese_alligator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Common_agama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Common_gatteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Common_viper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Flying_dragon_lizard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Galápagos_tortoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Greek_tortoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Green_anaconda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Green_sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Guntheri_gatteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Indian_cobra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Komodo_dragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Loggerhead_sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Madagascar_day_gecko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Mediterranean_house_gecko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Nile_crocodile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Oviparous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Salwater_crocodile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Subtropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Temperate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Tropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Viviparous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Carnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Clownwish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Herbivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Omnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Agama"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Alligator"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Beakhead"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodile"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Freshwater_turtle"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Gatteria"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Beakhead"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Gekko"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Sea_turtle"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Snake"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Tortoise"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Varanus"/>
+        <Class IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+    </SubClassOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#livesInClimateZone"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1744445298.owl#reproducesBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet"/>
+    </FunctionalObjectProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.owl-ontologies.com/Ontology1744976575.owl#weight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <IRI>http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

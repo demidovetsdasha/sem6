@@ -1,0 +1,35 @@
+sup({ z| ((1-x)*z<=y) /\ (z<=1) })
+
+def find_impl(a, b):
+     if x == 1:
+		raise Exception  # Множество пустое
+     return compare(div(b, diff(1, a)), 1, 0)
+     
+     
+     
+
+sup({ z| (min({1-x} \/ {z})<=y) /\ (z<=1) })
+
+def find_impl(a, b):
+
+   if 1 - a <= b:
+        return 1.0
+   else:
+        return compare(b, 1.0, 0)
+	
+	
+
+
+sup({ z| (max({1-x+z) \/ {0})<=y) /\ (z<=1) })
+
+def find_impl(a, b):
+
+    if b < 0:
+        raise Exception  # Множество пустое
+
+    z_upper_bound = diff(b, diff(1, a))
+    return compare(z_upper_bound, 1.0, 0)
+
+
+
+добавить t_div и div_call !!!

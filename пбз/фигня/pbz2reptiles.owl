@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.owl-ontologies.com/Ontology1744445298.owl#"
+     xml:base="http://www.owl-ontologies.com/Ontology1744445298.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#livesInClimateZone -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#livesInClimateZone">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#reproducesBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#reproducesBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#averageLifespan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#averageLifespan"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#diet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#diet"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#habitat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#habitat"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#poisoning -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#poisoning"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Agama -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Agama">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Alligator -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Alligator">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle"/>
+        <owl:versionInfo rdf:datatype="&xsd;string"></owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Beakhead -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Beakhead">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#ClimateZone -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#ClimateZone"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodile -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodile">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Crocodillia">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Freshwater_turtle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Freshwater_turtle">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Gatteria -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Gatteria">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Beakhead"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Gekko -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Gekko">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#ReproductionType -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#ReproductionType"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Sea_turtle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Sea_turtle">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Aquatic_turtle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Snake -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Snake">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Scaly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Tortoise -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Tortoise">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Turtle">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Reptile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Varanus -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Varanus">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1744445298.owl#Lizard"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#African_helmeted_turtle -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#African_helmeted_turtle"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#American_alligator -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#American_alligator"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Asian_water_varanus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Asian_water_varanus"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Ball_python -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Ball_python"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Chinese_alligator -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Chinese_alligator"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Common_agama -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Common_agama"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Common_gatteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Common_gatteria"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Common_viper -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Common_viper"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Flying_dragon_lizard -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Flying_dragon_lizard"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Galápagos_tortoise -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Galápagos_tortoise"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Greek_tortoise -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Greek_tortoise"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Green_anaconda -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Green_anaconda"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Green_sea_turtle -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Green_sea_turtle"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Guntheri_gatteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Guntheri_gatteria"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Indian_cobra -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Indian_cobra"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Komodo_dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Komodo_dragon"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Loggerhead_sea_turtle -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Loggerhead_sea_turtle"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Madagascar_day_gecko -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Madagascar_day_gecko"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Mediterranean_house_gecko -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Mediterranean_house_gecko"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Nile_crocodile -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Nile_crocodile"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Oviparous -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Oviparous"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Salwater_crocodile -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Salwater_crocodile"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Subtropical -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Subtropical"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Temperate -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Temperate"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Tropical -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Tropical"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1744445298.owl#Viviparous -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1744445298.owl#Viviparous"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

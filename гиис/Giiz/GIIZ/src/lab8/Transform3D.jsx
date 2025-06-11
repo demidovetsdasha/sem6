@@ -1,106 +1,195 @@
-import React, { useEffect, useRef, useState } from 'react';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import React, { useEffect, useRef, useState } from "react";
+import * as BABYLON from "babylonjs";
 
-const Transform3D = () => {
-  const containerRef = useRef(null);
-  const [controlsEnabled, setControlsEnabled] = useState(false);
-  
-  // Three.js refs
-  const scene = useRef(new THREE.Scene());
-  const camera = useRef(new THREE.PerspectiveCamera(45, 600/400, 0.1, 1000));
-  const renderer = useRef(null);
-  const controls = useRef(null);
+const vertices = [
+  [-1,-1,-1], [1,-1,-1], [1,1,-1], [-1,1,-1],
+  [-1,-1,1], [1,-1,1], [1,1,1], [-1,1,1]
+].map(v => [v[0]+0.5, v[1]+0.5, v[2]+0.5 ]);
+
+const edges = [
+  [0,1],[1,2],[2,3],[3,0], // Bottom
+  [4,5],[5,6],[6,7],[7,4], // Top
+  [0,4],[1,5],[2,6],[3,7]  // Sides
+];
+
+// Для каждой вершины храним связанные ребра
+const vertexEdges = Array(8).fill().map((_, i) => 
+  edges.reduce((acc, [a, b], idx) => 
+    (a === i || b === i) ? [...acc, idx] : acc, [])
+);
+
+const faces = [
+  { vertices: [4,5,6,7], normal: new BABYLON.Vector3(0, 0, 1) },
+  { vertices: [0,1,2,3], normal: new BABYLON.Vector3(0, 0, -1) },
+  { vertices: [1,5,6,2], normal: new BABYLON.Vector3(1, 0, 0) },
+  { vertices: [0,3,7,4], normal: new BABYLON.Vector3(-1, 0, 0) },
+  { vertices: [2,6,7,3], normal: new BABYLON.Vector3(0, 1, 0) },
+  { vertices: [0,4,5,1], normal: new BABYLON.Vector3(0, -1, 0) }
+];
+
+const edgeMap = new Map();
+faces.forEach((face, faceIndex) => {
+  face.vertices.forEach((v, i) => {
+    const a = v;
+    const b = face.vertices[(i+1)%4];
+    const key = `${Math.min(a,b)}-${Math.max(a,b)}`;
+    edgeMap.set(key, [...(edgeMap.get(key) || []), faceIndex]);
+  });
+});
+
+const edgeFaces = edges.map(edge => 
+  edgeMap.get(`${Math.min(edge[0], edge[1])}-${Math.max(edge[0], edge[1])}`) || []
+);
+
+export default function BabylonCube() {
+  const canvasRef = useRef(null);
+  const [visibleEdges, setVisibleEdges] = useState({ contour: 0, corner: 0 });
+  const sceneRef = useRef(null);
+  const cameraRef = useRef(null);
 
   useEffect(() => {
-    if (!containerRef.current) return;
-
-    // Инициализация рендерера
-    renderer.current = new THREE.WebGLRenderer({ 
-      antialias: true,
-      alpha: true
-    });
-    renderer.current.setSize(600, 400);
-    renderer.current.setClearColor(0xffffff, 0);
-    containerRef.current.appendChild(renderer.current.domElement);
-
-    // Настройка камеры для вида "3 грани"
-    camera.current.position.set(5, 5, 5);
-    camera.current.lookAt(0, 0, 0);
-
-    // Освещение
-    scene.current.add(new THREE.AmbientLight(0xffffff, 0.8));
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
-    directionalLight.position.set(-5, 5, 5);
-    scene.current.add(directionalLight);
-
-    // Создание куба
-    const geometry = new THREE.BoxGeometry(3, 3, 3);
+    const canvas = canvasRef.current;
+    const engine = new BABYLON.Engine(canvas, true);
+    const scene = new BABYLON.Scene(engine);
+    scene.clearColor = new BABYLON.Color4(1,1,1,1);
     
-    // Основной материал (белый)
-    const material = new THREE.MeshPhongMaterial({
-      color: 0xffffff,
-      polygonOffset: true,
-      polygonOffsetFactor: 1,
-      polygonOffsetUnits: 1
-    });
+    const camera = new BABYLON.ArcRotateCamera(
+      "camera",
+      -Math.PI/2,
+      Math.PI/3,
+      8,
+      new BABYLON.Vector3(0.5, 0.5, 0.5),
+      scene
+    );
+    camera.setPosition(new BABYLON.Vector3(0.5, 2, -5));
+    camera.attachControl(canvas, true);
+    cameraRef.current = camera;
+    
+    new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0,1,0), scene);
+    sceneRef.current = scene;
 
-    // Геометрия для видимых ребер
-    const edges = new THREE.EdgesGeometry(geometry, 30);
-    const edgeMaterial = new THREE.LineBasicMaterial({ 
-      color: 0x000000,
-      linewidth: 2
-    });
-
-    const cube = new THREE.Mesh(geometry, material);
-    const wireframe = new THREE.LineSegments(edges, edgeMaterial);
-
-    const group = new THREE.Group();
-    group.add(cube);
-    group.add(wireframe);
-    scene.current.add(group);
-
-    // OrbitControls
-    controls.current = new OrbitControls(camera.current, renderer.current.domElement);
-    controls.current.enableDamping = true;
-    controls.current.dampingFactor = 0.05;
-
-    // Анимация
-    const animate = () => {
-      requestAnimationFrame(animate);
-      controls.current.update();
-      renderer.current.render(scene.current, camera.current);
-    };
-    animate();
-
-    return () => {
-      containerRef.current?.removeChild(renderer.current.domElement);
-      controls.current?.dispose();
-    };
+    engine.runRenderLoop(() => scene.render());
+    return () => engine.dispose();
   }, []);
 
-  return (
-    <div style={{ display: 'flex', gap: 20, padding: 20 }}>
-      <div ref={containerRef} style={{ width: 600, height: 400 }} />
+  const findClosestVertex = (eye) => {
+    let closestVertex = 0;
+    let minDistance = Infinity;
+    
+    vertices.forEach((v, i) => {
+      const vertexPos = new BABYLON.Vector3(...v);
+      const distance = BABYLON.Vector3.DistanceSquared(eye, vertexPos);
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestVertex = i;
+      }
+    });
+    
+    return closestVertex;
+  };
+
+  const updateEdges = () => {
+    if (!sceneRef.current) return;
+
+    // Удаление старых линий
+    sceneRef.current.meshes
+      .filter(m => m.name.startsWith("edge-"))
+      .forEach(m => m.dispose());
+
+    const eye = cameraRef.current.position;
+    
+    // Определение видимых граней
+    const visibleFaces = faces.map(face => {
+      const facePoint = new BABYLON.Vector3(...vertices[face.vertices[0]]);
+      const toCamera = eye.subtract(facePoint);
+      return BABYLON.Vector3.Dot(face.normal, toCamera) > 0;
+    });
+
+    // Отрисовка контурных ребер (синие)
+    let contourCount = 0;
+    edges.forEach(([a, b], i) => {
+      const adjacentFaces = edgeFaces[i];
+      const visibleCount = adjacentFaces.filter(fi => visibleFaces[fi]).length;
       
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-        <label>
-          <input
-            type="checkbox"
-            checked={controlsEnabled}
-            onChange={(e) => {
-              setControlsEnabled(e.target.checked);
-              controls.current.enabled = e.target.checked;
-            }}
-          />
-          Вращение камеры
-        </label>
-        <div style={{color: '#666', fontSize: '0.9em'}}>
-          При повороте будут видны только 3 грани в угле
-        </div>
+      if (visibleCount === 1) {
+        const points = [
+          new BABYLON.Vector3(...vertices[a]),
+          new BABYLON.Vector3(...vertices[b])
+        ];
+        const line = BABYLON.MeshBuilder.CreateLines(`edge-contour-${i}`, {
+          points,
+          updatable: true
+        }, sceneRef.current);
+        line.color = new BABYLON.Color3(0, 0, 1);
+        line.enableEdgesRendering();
+        line.edgesWidth = 2;
+        contourCount++;
+      }
+    });
+    // Поиск и отрисовка ближайшего угла (красные)
+    const closestVertex = findClosestVertex(eye);
+    const cornerEdges = vertexEdges[closestVertex];
+    let cornerCount = 0;
+    
+    cornerEdges.forEach(edgeIdx => {
+      const [a, b] = edges[edgeIdx];
+      const points = [
+        new BABYLON.Vector3(...vertices[a]),
+        new BABYLON.Vector3(...vertices[b])
+      ];
+      const line = BABYLON.MeshBuilder.CreateLines(`edge-corner-${edgeIdx}`, {
+        points,
+        updatable: true
+      }, sceneRef.current);
+      line.color = new BABYLON.Color3(1, 0, 0);
+      line.enableEdgesRendering();
+      line.edgesWidth = 4;
+      cornerCount++;
+    });
+
+    setVisibleEdges({ contour: contourCount, corner: cornerCount });
+  };
+
+  return (
+    <div style={{ 
+      width: '67vw', 
+      height: '67vh', 
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      background: '#f0f0f0'
+    }}>
+      <div style={{
+        width: '80%',
+        height: '80%',
+        border: '2px solid #333',
+        borderRadius: '8px',
+        overflow: 'hidden',
+        position: 'relative'
+      }}>
+        <canvas ref={canvasRef} style={{ width: '100%', height: '100%' }} />
+        <button 
+          onClick={updateEdges}
+          style={{
+            position: 'absolute',
+            bottom: '40px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            padding: '12px 24px',
+            background: '#2196F3',
+            color: 'white',
+            border: 'none',
+            borderRadius: '25px',
+            cursor: 'pointer',
+            fontSize: '16px',
+            boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+            display: 'flex',
+            gap: '10px'
+          }}
+        >
+          <span>Обновить видимость</span>
+        </button>
       </div>
     </div>
   );
-};
-
-export default Transform3D;
+}

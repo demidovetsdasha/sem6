@@ -1,0 +1,578 @@
+Prefix(:=<http://www.semanticweb.org/honor/ontologies/2025/4/untitled-ontology-20/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/honor/ontologies/2025/4/untitled-ontology-20>
+Import(<http://www.owl-ontologies.com/Ontology1744976575.owl>)
+Import(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix>)
+
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1744976575.owl#Bird>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1744976575.owl#ClimateZone>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1744976575.owl#Diet>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1744976575.owl#Fish>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1744976575.owl#Mammal>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1744976575.owl#Reptile>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ReproductionType>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle>))
+Declaration(Class(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy>))
+Declaration(DataProperty(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan>))
+Declaration(DataProperty(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat>))
+Declaration(DataProperty(<http://www.owl-ontologies.com/Ontology1744976575.owl#name>))
+Declaration(DataProperty(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight>))
+Declaration(DataProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet>))
+Declaration(DataProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat>))
+Declaration(DataProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name>))
+Declaration(DataProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Carnivore>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Herbivore>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Omnivore>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Temperate>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> (<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone>)
+
+ObjectPropertyDomain(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+ObjectPropertyRange(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#ClimateZone>)
+
+# Object Property: <http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> (<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet>)
+
+ObjectPropertyDomain(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+ObjectPropertyRange(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Diet>)
+
+# Object Property: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone>)
+ObjectPropertyDomain(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> ObjectSomeValuesFrom(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>))
+ObjectPropertyRange(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> ObjectSomeValuesFrom(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone>))
+
+# Object Property: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> ObjectSomeValuesFrom(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>))
+ObjectPropertyRange(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> ObjectSomeValuesFrom(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType>))
+
+# Object Property: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> ObjectSomeValuesFrom(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>))
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> (<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan>)
+
+DataPropertyDomain(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+DataPropertyRange(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> xsd:integer)
+
+# Data Property: <http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> (<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat>)
+
+DataPropertyDomain(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+DataPropertyRange(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> xsd:string)
+
+# Data Property: <http://www.owl-ontologies.com/Ontology1744976575.owl#name> (<http://www.owl-ontologies.com/Ontology1744976575.owl#name>)
+
+DataPropertyDomain(<http://www.owl-ontologies.com/Ontology1744976575.owl#name> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+DataPropertyRange(<http://www.owl-ontologies.com/Ontology1744976575.owl#name> xsd:string)
+
+# Data Property: <http://www.owl-ontologies.com/Ontology1744976575.owl#weight> (<http://www.owl-ontologies.com/Ontology1744976575.owl#weight>)
+
+DataPropertyDomain(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+DataPropertyRange(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight> xsd:float)
+
+# Data Property: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>)
+DataPropertyRange(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>)
+DataPropertyRange(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> owl:Thing)
+DataPropertyRange(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake>)
+DataPropertyRange(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> xsd:boolean)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.owl-ontologies.com/Ontology1744976575.owl#Bird> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Bird>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1744976575.owl#Bird> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1744976575.owl#Fish> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Fish>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1744976575.owl#Fish> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1744976575.owl#Mammal> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Mammal>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1744976575.owl#Mammal> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1744976575.owl#Reptile> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Reptile>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1744976575.owl#Reptile> <http://www.owl-ontologies.com/Ontology1744976575.owl#Animal>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile>)
+
+# Class: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus>)
+
+SubClassOf(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant> (<http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Mammal> <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant> <http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant> <http://www.owl-ontologies.com/Ontology1744976575.owl#Herbivore>)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant> "65"^^xsd:integer)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant> "Саванна")
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#name> <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant> "Африканский слон"@ru)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight> <http://www.owl-ontologies.com/Ontology1744976575.owl#African_elephant> "6000.0"^^xsd:float)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Bird> <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle> <http://www.owl-ontologies.com/Ontology1744976575.owl#Temperate>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle> <http://www.owl-ontologies.com/Ontology1744976575.owl#Carnivore>)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle> "25"^^xsd:integer)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle> "Леса и прибрежные зоны")
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#name> <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle> "Белоголовый орлан"@ru)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight> <http://www.owl-ontologies.com/Ontology1744976575.owl#Bald_Eagle> "5.0"^^xsd:float)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Carnivore> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Carnivore>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Diet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Carnivore>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Fish> <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish> <http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish> <http://www.owl-ontologies.com/Ontology1744976575.owl#Omnivore>)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish> "8"^^xsd:integer)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish> "Рифы")
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#name> <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish> "Рыба-клоун"@ru)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight> <http://www.owl-ontologies.com/Ontology1744976575.owl#Clownfish> "0.25"^^xsd:float)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Herbivore> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Herbivore>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Diet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Herbivore>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Reptile> <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon> <http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon> <http://www.owl-ontologies.com/Ontology1744976575.owl#Carnivore>)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon> "30"^^xsd:integer)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon> "Острова Индонезии")
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#name> <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon> "Комодский варан"@ru)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight> <http://www.owl-ontologies.com/Ontology1744976575.owl#Komodo_dragon> "80.0"^^xsd:float)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Omnivore> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Omnivore>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Diet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Omnivore>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#Bird> <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot> <http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical>)
+ObjectPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#hasDiet> <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot> <http://www.owl-ontologies.com/Ontology1744976575.owl#Omnivore>)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#averageLifespan> <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot> "55"^^xsd:integer)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#habitat> <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot> "Тропические леса")
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#name> <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot> "Попугай"@ru)
+DataPropertyAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#weight> <http://www.owl-ontologies.com/Ontology1744976575.owl#Parrot> "0.7"^^xsd:float)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Temperate> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Temperate>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#ClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#Temperate>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical> (<http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1744976575.owl#ClimateZone> <http://www.owl-ontologies.com/Ontology1744976575.owl#Tropical>)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle> "Рыба, моллюски, водные растения"@ru)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle> "Пресные воды"@ru)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle> "Африканская шлемовая черепаха"@ru)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator> "Рыба, птицы, млекопитающие, черепахи")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator> "Пресные воды")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator> "Американский аллигатор")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus> "Рыба, птицы, яйца, грызуны")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus> "Влажные тропики")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus> "Азиатский водяной варан")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> "Мелкие млекопитающие, грызуны")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> "Саванна, кустарники")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> "Королевский питон")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python> "false"^^xsd:boolean)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore> "плотоядный")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator> "Рыба, моллюски, птицы")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator> "Пресные воды")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator> "Китайский аллигатор")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama> "Муравьи, термиты, кузнечики")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama> "Полупустыни, саванны")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama> "Обыкновенная агама")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria> "Насекомые, дождевые черви")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria> "Скалы, леса")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria> "Обыкновенная гаттерия")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> "Лягушки, мыши, ящерицы")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> "Леса, степи, болота")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> "Обыкновенная гадюка")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper> "true"^^xsd:boolean)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard> "Муравьи, термиты, жуки")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard> "Леса Юго-Восточной Азии")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard> "Летучий дракон")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise> "Трава, кактусы, фрукты")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise> "Суша (острова)")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise> "Галапагосская черепаха")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise> "Листья, цветы, плоды")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise> "Кустарники, луга")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise> "Греческая черепаха")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> "Рыба, птицы, капибары, кайманы")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> "Болота")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> "Зелёная анаконда")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda> "false"^^xsd:boolean)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle> "Морские водоросли, трава")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle> "Моря, океаны")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle> "Зелёная морская черепаха")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria> "Насекомые, личинки, мелкие позвоночные")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria> "Новая Зеландия")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria> "Гаттерия Гюнтера")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore> "травоядный")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> "Лягушки, мелкие змеи, грызуны")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> "Леса, деревни")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> "Индийская кобра")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra> "true"^^xsd:boolean)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore> "насекомоядный")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon> "Олени, кабаны, падаль")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon> "Острова, саванны")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon> "Комодский варан")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle> "Медузы, крабы, раковины")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle> "Моря, океаны")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle> "Большеголовая морская черепаха")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko> "Насекомые, нектар, фрукты")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko> "Тропические леса")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko> "Дневной геккон Мадагаскара")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile> "Рыба, зебры, птицы")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile> "Пресные воды")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile> "Нильский крокодил")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore> "всеядный")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ReproductionType> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous> "яйцекладущие")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile> "Рыба, млекопитающие, птицы")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile> "Устья рек, моря")
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile> "Морской крокодил")
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical>)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate>)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical>)
+
+# Individual: <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous> (<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous>)
+
+ClassAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ReproductionType> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous>)
+DataPropertyAssertion(<http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name> <http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous> "живородящие")
+
+
+)

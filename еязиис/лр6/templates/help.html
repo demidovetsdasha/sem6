@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h3>MyChat</h3>
+        <ul class="chat-list">
+            <li class="chat-entry"><a href="/">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="help-container">
+            <h2>Help</h2>
+            <p><strong>Create chat</strong>: Enter the name of the new chat and click the button.</p>
+            <p><strong>Choose chat</strong>: Displays a list of available chats.</p>
+            <p><strong>Save chat</strong>: Saving the current chat state to a JSON file.</p>
+            <a href="/" class="back-button">Back</a>
+        </div>
+    </div>
+</body>
+</html>

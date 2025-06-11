@@ -1,0 +1,1489 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/honor/ontologies/2025/4/gospodipomogi"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/honor/ontologies/2025/4/gospodipomogi">
+    <Prefix name="" IRI="http://www.semanticweb.org/honor/ontologies/2025/4/gospodipomogi/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/honor/ontologies/2025/4/animalss</Import>
+    <Import>http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix</Import>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#ClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#DietType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Scaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Snake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ReproductionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#poisoning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Carnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Herbivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Omnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Temperate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Tropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bird"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Fish"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Mammal"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Reptile"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Scaly"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Snake"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Scaly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodillia"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Beakhead"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Aquatic_turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Scaly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Turtle"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Lizard"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Mammal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bird"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Mammal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#DietType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Carnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Fish"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Snake"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#DietType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Herbivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#DietType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Omnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#ClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Temperate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#ClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Tropical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Fish"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Varanus"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Agama"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Gekko"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Crocodile"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ReproductionType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Freshwater_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ReproductionType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Omnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Subtropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+        <Literal>Саванна</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+        <Literal>Африканский слон</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#African_elephant"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+        <Literal>Леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+        <Literal>Белоголовый орлан</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bald_eagle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">220.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+        <Literal>Леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+        <Literal>Бенгальский тигр</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Bengal_tiger"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">220.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+        <Literal>Рифы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+        <Literal>Рыба-клоун</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Clownfish"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+        <Literal>Болота</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+        <Literal>Зеленая анаконда</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#poisoning"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+        <Literal>Океаны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+        <Literal>Белая акула</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#White_shark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+        <Literal>Рыба, моллюски, водные растения</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#African_helmeted_turtle"/>
+        <Literal>Африканская шлемовая черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+        <Literal>Рыба, птицы, млекопитающие, черепахи</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#American_alligator"/>
+        <Literal>Американский аллигатор</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+        <Literal>Рыба, птицы, яйца, грызуны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+        <Literal>Влажные тропики</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Asian_water_varanus"/>
+        <Literal>Азиатский водяной варан</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+        <Literal>Мелкие млекопитающие, грызуны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+        <Literal>Саванна, кустарники</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+        <Literal>Королевский питон</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Ball_python"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Carnivore"/>
+        <Literal>плотоядный</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+        <Literal>Рыба, моллюски, птицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Chinese_alligator"/>
+        <Literal>Китайский аллигатор</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+        <Literal>Муравьи, термиты, кузнечики</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+        <Literal>Полупустыни, саванны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_agama"/>
+        <Literal>Обыкновенная агама</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+        <Literal>Насекомые, дождевые черви</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+        <Literal>Скалы, леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_gatteria"/>
+        <Literal>Обыкновенная гаттерия</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+        <Literal>Лягушки, мыши, ящерицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+        <Literal>Леса, степи, болота</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+        <Literal>Обыкновенная гадюка</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Common_viper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+        <Literal>Муравьи, термиты, жуки</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+        <Literal>Леса Юго-Восточной Азии</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Flying_dragon_lizard"/>
+        <Literal>Летучий дракон</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+        <Literal>Трава, кактусы, фрукты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+        <Literal>Суша (острова)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Galåpagos_tortoise"/>
+        <Literal>Галапагосская черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+        <Literal>Листья, цветы, плоды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+        <Literal>Кустарники, луга</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Greek_tortoise"/>
+        <Literal>Греческая черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+        <Literal>Рыба, птицы, капибары, кайманы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+        <Literal>Болота</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+        <Literal>Зелёная анаконда</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+        <Literal>Морские водоросли, трава</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+        <Literal>Моря, океаны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Green_sea_turtle"/>
+        <Literal>Зелёная морская черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+        <Literal>Насекомые, личинки, мелкие позвоночные</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+        <Literal>Новая Зеландия</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Guntheri_gatteria"/>
+        <Literal>Гаттерия Гюнтера</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Herbivore"/>
+        <Literal>травоядный</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+        <Literal>Лягушки, мелкие змеи, грызуны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+        <Literal>Леса, деревни</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+        <Literal>Индийская кобра</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Indian_cobra"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Insectivore"/>
+        <Literal>насекомоядный</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+        <Literal>Олени, кабаны, падаль</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+        <Literal>Острова, саванны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Komodo_dragon"/>
+        <Literal>Комодский варан</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+        <Literal>Медузы, крабы, раковины</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+        <Literal>Моря, океаны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Loggerhead_sea_turtle"/>
+        <Literal>Большеголовая морская черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+        <Literal>Насекомые, нектар, фрукты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+        <Literal>Тропические леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Madagascar_day_gecko"/>
+        <Literal>Дневной геккон Мадагаскара</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+        <Literal>Рыба, зебры, птицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Nile_crocodile"/>
+        <Literal>Нильский крокодил</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Omnivore"/>
+        <Literal>всеядный</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Oviparous"/>
+        <Literal>яйцекладущие</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+        <Literal>Рыба, млекопитающие, птицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+        <Literal>Устья рек, моря</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Salwater_crocodile"/>
+        <Literal>Морской крокодил</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Viviparous"/>
+        <Literal>живородящие</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasClimateZone"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#ClimateZone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#hasDiet"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#DietType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasClimateZone"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ClimateZone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#hasDiet"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#DietType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#reproducesBy"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#ReproductionType"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#averageLifespan"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#poisoning"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Snake"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Reptile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+        <Class IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#Snake"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#averageLifespan"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#habitat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#poisoning"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss#weight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#diet"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#habitat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix#poisoning"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/honor/ontologies/2025/4/animalss"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss">
+    <Prefix name="" IRI="http://www.semanticweb.org/honor/ontologies/2025/4/animalss/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DietType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snake"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDiet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#averageLifespan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#habitat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poisoning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#African_elephant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bald_eagle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clownfish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green_anaconda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Herbivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Omnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Temperate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#White_shark"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reptile"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scaly"/>
+        <Class IRI="#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snake"/>
+        <Class IRI="#Scaly"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#African_elephant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bird"/>
+        <NamedIndividual IRI="#Bald_eagle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DietType"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#Clownfish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Snake"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DietType"/>
+        <NamedIndividual IRI="#Herbivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DietType"/>
+        <NamedIndividual IRI="#Omnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateZone"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateZone"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#White_shark"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#African_elephant"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#African_elephant"/>
+        <NamedIndividual IRI="#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Bald_eagle"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Bald_eagle"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Clownfish"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Clownfish"/>
+        <NamedIndividual IRI="#Omnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#White_shark"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#White_shark"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#African_elephant"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#African_elephant"/>
+        <Literal>Саванна</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#African_elephant"/>
+        <Literal>Африканский слон</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#African_elephant"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Bald_eagle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Bald_eagle"/>
+        <Literal>Леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Bald_eagle"/>
+        <Literal>Белоголовый орлан</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#Bald_eagle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">220.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+        <Literal>Леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+        <Literal>Бенгальский тигр</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#Bengal_tiger"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">220.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Clownfish"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Clownfish"/>
+        <Literal>Рифы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Clownfish"/>
+        <Literal>Рыба-клоун</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#Clownfish"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal>Болота</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal>Зеленая анаконда</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#poisoning"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#White_shark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#White_shark"/>
+        <Literal>Океаны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#White_shark"/>
+        <Literal>Белая акула</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#White_shark"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1100.0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDiet"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDiet"/>
+        <Class IRI="#DietType"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#averageLifespan"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#habitat"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#poisoning"/>
+        <Class IRI="#Snake"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#averageLifespan"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#habitat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#poisoning"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

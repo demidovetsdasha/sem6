@@ -1,0 +1,1165 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix">
+    <Prefix name="" IRI="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alligator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aquatic_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beakhead"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crocodile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crocodillia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DietType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freshwater_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gekko"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lizard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReproductionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tortoise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Varanus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDiet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reproducesBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#averageLifespan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#diet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#habitat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poisoning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#American_alligator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ball_python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Common_agama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Common_gatteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Common_viper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green_anaconda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Herbivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indian_cobra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Insectivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Omnivore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oviparous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Subtropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Temperate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tropical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Viviparous"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Agama"/>
+        <Class IRI="#Lizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alligator"/>
+        <Class IRI="#Crocodillia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aquatic_turtle"/>
+        <Class IRI="#Turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beakhead"/>
+        <Class IRI="#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crocodile"/>
+        <Class IRI="#Crocodillia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crocodillia"/>
+        <Class IRI="#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freshwater_turtle"/>
+        <Class IRI="#Aquatic_turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatteria"/>
+        <Class IRI="#Beakhead"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gekko"/>
+        <Class IRI="#Lizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lizard"/>
+        <Class IRI="#Scaly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reptile"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scaly"/>
+        <Class IRI="#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sea_turtle"/>
+        <Class IRI="#Aquatic_turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snake"/>
+        <Class IRI="#Scaly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tortoise"/>
+        <Class IRI="#Turtle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turtle"/>
+        <Class IRI="#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Varanus"/>
+        <Class IRI="#Lizard"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Freshwater_turtle"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alligator"/>
+        <NamedIndividual IRI="#American_alligator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Varanus"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Snake"/>
+        <NamedIndividual IRI="#Ball_python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DietType"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alligator"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agama"/>
+        <NamedIndividual IRI="#Common_agama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatteria"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Snake"/>
+        <NamedIndividual IRI="#Common_viper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gekko"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tortoise"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tortoise"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Snake"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sea_turtle"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatteria"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DietType"/>
+        <NamedIndividual IRI="#Herbivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Snake"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DietType"/>
+        <NamedIndividual IRI="#Insectivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gekko"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sea_turtle"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gekko"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crocodile"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DietType"/>
+        <NamedIndividual IRI="#Omnivore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReproductionType"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Freshwater_turtle"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateZone"/>
+        <NamedIndividual IRI="#Subtropical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateZone"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateZone"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReproductionType"/>
+        <NamedIndividual IRI="#Viviparous"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+        <NamedIndividual IRI="#Subtropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+        <NamedIndividual IRI="#Omnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#American_alligator"/>
+        <NamedIndividual IRI="#Subtropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#American_alligator"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#American_alligator"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Common_agama"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Common_agama"/>
+        <NamedIndividual IRI="#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Common_agama"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+        <NamedIndividual IRI="#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <NamedIndividual IRI="#Viviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+        <NamedIndividual IRI="#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+        <NamedIndividual IRI="#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+        <NamedIndividual IRI="#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <NamedIndividual IRI="#Viviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+        <NamedIndividual IRI="#Herbivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+        <NamedIndividual IRI="#Temperate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+        <NamedIndividual IRI="#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+        <NamedIndividual IRI="#Subtropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+        <NamedIndividual IRI="#Insectivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+        <NamedIndividual IRI="#Tropical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiet"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+        <NamedIndividual IRI="#Carnivore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+        <NamedIndividual IRI="#Oviparous"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+        <Literal>Рыба, моллюски, водные растения</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#African_helmeted_turtle"/>
+        <Literal>Африканская шлемовая черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#American_alligator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#American_alligator"/>
+        <Literal>Рыба, птицы, млекопитающие, черепахи</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#American_alligator"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#American_alligator"/>
+        <Literal>Американский аллигатор</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+        <Literal>Рыба, птицы, яйца, грызуны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+        <Literal>Влажные тропики</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Asian_water_varanus"/>
+        <Literal>Азиатский водяной варан</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <Literal>Мелкие млекопитающие, грызуны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <Literal>Саванна, кустарники</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <Literal>Королевский питон</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#poisoning"/>
+        <NamedIndividual IRI="#Ball_python"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+        <Literal>Рыба, моллюски, птицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Chinese_alligator"/>
+        <Literal>Китайский аллигатор</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Common_agama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Common_agama"/>
+        <Literal>Муравьи, термиты, кузнечики</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Common_agama"/>
+        <Literal>Полупустыни, саванны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Common_agama"/>
+        <Literal>Обыкновенная агама</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+        <Literal>Насекомые, дождевые черви</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+        <Literal>Скалы, леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Common_gatteria"/>
+        <Literal>Обыкновенная гаттерия</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <Literal>Лягушки, мыши, ящерицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <Literal>Леса, степи, болота</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <Literal>Обыкновенная гадюка</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#poisoning"/>
+        <NamedIndividual IRI="#Common_viper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+        <Literal>Муравьи, термиты, жуки</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+        <Literal>Леса Юго-Восточной Азии</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Flying_dragon_lizard"/>
+        <Literal>Летучий дракон</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+        <Literal>Трава, кактусы, фрукты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+        <Literal>Суша (острова)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Galåpagos_tortoise"/>
+        <Literal>Галапагосская черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+        <Literal>Листья, цветы, плоды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+        <Literal>Кустарники, луга</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Greek_tortoise"/>
+        <Literal>Греческая черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal>Рыба, птицы, капибары, кайманы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal>Болота</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal>Зелёная анаконда</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#poisoning"/>
+        <NamedIndividual IRI="#Green_anaconda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+        <Literal>Морские водоросли, трава</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+        <Literal>Моря, океаны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Green_sea_turtle"/>
+        <Literal>Зелёная морская черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+        <Literal>Насекомые, личинки, мелкие позвоночные</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+        <Literal>Новая Зеландия</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Guntheri_gatteria"/>
+        <Literal>Гаттерия Гюнтера</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <Literal>Лягушки, мелкие змеи, грызуны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <Literal>Леса, деревни</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <Literal>Индийская кобра</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#poisoning"/>
+        <NamedIndividual IRI="#Indian_cobra"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+        <Literal>Олени, кабаны, падаль</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+        <Literal>Острова, саванны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Komodo_dragon"/>
+        <Literal>Комодский варан</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+        <Literal>Медузы, крабы, раковины</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+        <Literal>Моря, океаны</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Loggerhead_sea_turtle"/>
+        <Literal>Большеголовая морская черепаха</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+        <Literal>Насекомые, нектар, фрукты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+        <Literal>Тропические леса</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Madagascar_day_gecko"/>
+        <Literal>Дневной геккон Мадагаскара</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+        <Literal>Рыба, зебры, птицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+        <Literal>Пресные воды</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Nile_crocodile"/>
+        <Literal>Нильский крокодил</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageLifespan"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diet"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+        <Literal>Рыба, млекопитающие, птицы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#habitat"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+        <Literal>Устья рек, моря</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Salwater_crocodile"/>
+        <Literal>Морской крокодил</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasClimateZone"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDiet"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDiet"/>
+        <Class IRI="#DietType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reproducesBy"/>
+        <Class IRI="#ReproductionType"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#averageLifespan"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#diet"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#habitat"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#poisoning"/>
+        <Class IRI="#Snake"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#averageLifespan"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#diet"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#habitat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#poisoning"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

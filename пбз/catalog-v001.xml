@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix" uri="лр2/fixed_reptiles.owx"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix" uri="fixed_reptiles.owx"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix" uri="fixed_reptiles.owx"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix" uri="fixed_reptiles.owx"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="http://www.owl-ontologies.com/Ontology1744445298.owl" uri="фигня/pbz2reptiles.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="duplicate:http://www.owl-ontologies.com/Ontology1744976575.owl" uri="фигня/fixed_animals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="duplicate:http://www.owl-ontologies.com/Ontology1744976575.owl" uri="фигня/pbz2animals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="http://www.semanticweb.org/honor/ontologies/2025/3/pbzz" uri="фигня/lr2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="duplicate:http://www.semanticweb.org/honor/ontologies/2025/4/animalss" uri="animalss_old.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="duplicate:http://www.semanticweb.org/honor/ontologies/2025/4/animalss" uri="animalss_old_old.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="http://www.semanticweb.org/honor/ontologies/2025/4/gospodipomogi" uri="фигня/bozhe.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="http://www.semanticweb.org/honor/ontologies/2025/4/please" uri="фигня/please.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="http://www.semanticweb.org/honor/ontologies/2025/4/reptiles_fix" uri="лр2/fixed_reptiles.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1747343029591" name="shadowed:http://www.semanticweb.org/honor/ontologies/2025/4/animalss" uri="лр2/animalss.owx"/>
+    </group>
+</catalog>

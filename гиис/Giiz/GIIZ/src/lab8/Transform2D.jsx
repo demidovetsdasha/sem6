@@ -1,142 +1,147 @@
 import React, { useState, useRef } from "react";
 import Plot from "react-plotly.js";
-import { grahamScan, isConvex } from "../../logic/lab5/polygon";
+
+const clipWindow = { xMin: 2, xMax: 8, yMin: 2, yMax: 8 };
 
 const Transform2D = () => {
-  const [originalPoints, setOriginalPoints] = useState([]);
-  const [hullPoints, setHullPoints] = useState([]);
+  const [points, setPoints] = useState([]);
+  const [segments, setSegments] = useState([]);
+  const [clippedSegments, setClippedSegments] = useState([]);
   const [inputCoords, setInputCoords] = useState({ x: "", y: "" });
-  const [polygonType, setPolygonType] = useState("convex");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("Введите хотя бы 2 точки");
   const plotRef = useRef(null);
 
   const handleAddPoint = () => {
     const x = parseFloat(inputCoords.x);
     const y = parseFloat(inputCoords.y);
-    
     if (isNaN(x) || isNaN(y) || x < 0 || x > 10 || y < 0 || y > 10) {
-      setStatus("Ошибка: координаты от 0 до 10");
+      setStatus("Ошибка: координаты должны быть в диапазоне [0, 10]");
       return;
     }
 
-    setOriginalPoints(prev => [...prev, { x, y }]);
+    const newPoints = [...points, { x, y }];
+    setPoints(newPoints);
     setInputCoords({ x: "", y: "" });
-    setStatus(`Точка (${x.toFixed(1)}, ${y.toFixed(1)}) добавлена`);
-  };
+    setStatus(`Точка (${x}, ${y}) добавлена`);
 
-  const buildPolygon = () => {
-    if (originalPoints.length < 3) {
-      setStatus("Нужно минимум 3 точки!");
-      return;
-    }
-
-    if (polygonType === "convex") {
-      const hull = grahamScan(originalPoints);
-      setHullPoints(hull);
-      setStatus("Выпуклая оболочка построена");
-    } else {
-      setHullPoints([...originalPoints]);
-      setStatus("Вогнутый полигон построен");
+    if (newPoints.length >= 2) {
+      const last = newPoints[newPoints.length - 2];
+      setSegments((prev) => [...prev, { p1: last, p2: { x, y } }]);
     }
   };
 
-  const cohenSutherlandClip = () => {
-    if (hullPoints.length < 3) return;
+  // Алгоритм Коэна-Сазерленда
+  const getRegionCode = (p) => {
+    let code = 0;
+    if (p.x < clipWindow.xMin) code |= 1;
+    if (p.x > clipWindow.xMax) code |= 2;
+    if (p.y < clipWindow.yMin) code |= 4;
+    if (p.y > clipWindow.yMax) code |= 8;
+    return code;
+  };
 
-    const INSIDE = 0, LEFT = 1, RIGHT = 2, BOTTOM = 4, TOP = 8;
-    const clipWindow = { x1: 2, y1: 2, x2: 8, y2: 8 };
+  const cohenSutherlandClip = (p1, p2) => {
+    let code1 = getRegionCode(p1);
+    let code2 = getRegionCode(p2);
+    let accept = false;
 
-    const computeCode = (x, y) => {
-      let code = INSIDE;
-      if (x < clipWindow.x1) code |= LEFT;
-      else if (x > clipWindow.x2) code |= RIGHT;
-      if (y < clipWindow.y1) code |= BOTTOM;
-      else if (y > clipWindow.y2) code |= TOP;
-      return code;
-    };
+    while (true) {
+      if ((code1 | code2) === 0) {
+        accept = true;
+        break;
+      } else if ((code1 & code2) !== 0) {
+        break;
+      } else {
+        let x, y;
+        const outCode = code1 ? code1 : code2;
+        const dx = p2.x - p1.x;
+        const dy = p2.y - p1.y;
 
-    const newPoints = [];
-    for (let i = 0; i < hullPoints.length; i++) {
-      const p1 = hullPoints[i];
-      const p2 = hullPoints[(i + 1) % hullPoints.length];
-      
-      let code1 = computeCode(p1.x, p1.y);
-      let code2 = computeCode(p2.x, p2.y);
-      let accept = false;
+        if (outCode & 8) {
+          x = p1.x + dx * (clipWindow.yMax - p1.y) / dy;
+          y = clipWindow.yMax;
+        } else if (outCode & 4) {
+          x = p1.x + dx * (clipWindow.yMin - p1.y) / dy;
+          y = clipWindow.yMin;
+        } else if (outCode & 2) {
+          y = p1.y + dy * (clipWindow.xMax - p1.x) / dx;
+          x = clipWindow.xMax;
+        } else if (outCode & 1) {
+          y = p1.y + dy * (clipWindow.xMin - p1.x) / dx;
+          x = clipWindow.xMin;
+        }
 
-      while (true) {
-        if (!(code1 | code2)) {
-          accept = true;
-          break;
-        } else if (code1 & code2) break;
-        else {
-          let [x, y] = [0, 0];
-          const codeOut = code1 || code2;
-
-          if (codeOut & TOP) {
-            x = p1.x + (p2.x - p1.x) * (clipWindow.y2 - p1.y) / (p2.y - p1.y);
-            y = clipWindow.y2;
-          } else if (codeOut & BOTTOM) {
-            x = p1.x + (p2.x - p1.x) * (clipWindow.y1 - p1.y) / (p2.y - p1.y);
-            y = clipWindow.y1;
-          } else if (codeOut & RIGHT) {
-            y = p1.y + (p2.y - p1.y) * (clipWindow.x2 - p1.x) / (p2.x - p1.x);
-            x = clipWindow.x2;
-          } else if (codeOut & LEFT) {
-            y = p1.y + (p2.y - p1.y) * (clipWindow.x1 - p1.x) / (p2.x - p1.x);
-            x = clipWindow.x1;
-          }
-
-          if (codeOut === code1) {
-            p1.x = x;
-            p1.y = y;
-            code1 = computeCode(x, y);
-          } else {
-            p2.x = x;
-            p2.y = y;
-            code2 = computeCode(x, y);
-          }
+        if (outCode === code1) {
+          p1 = { x, y };
+          code1 = getRegionCode(p1);
+        } else {
+          p2 = { x, y };
+          code2 = getRegionCode(p2);
         }
       }
-      if (accept) {
-        newPoints.push(p1);
-        newPoints.push(p2);
-      }
     }
-    
-    setHullPoints(newPoints);
-    setStatus("Отсечение выполнено");
+
+    if (accept) return { p1, p2 };
+    return null;
+  };
+
+  const clipAllSegments = () => {
+    const clipped = [];
+    for (const seg of segments) {
+      const result = cohenSutherlandClip(seg.p1, seg.p2);
+      if (result) clipped.push(result);
+    }
+    setClippedSegments(clipped);
+    setStatus("Отсечение завершено");
+  };
+
+  const resetAll = () => {
+    setPoints([]);
+    setSegments([]);
+    setClippedSegments([]);
+    setInputCoords({ x: "", y: "" });
+    setStatus("Очищено");
   };
 
   const generatePlotData = () => {
-    const clipWindow = { x1: 2, y1: 2, x2: 8, y2: 8 };
+    const data = [];
 
-    return [
-      {
-        x: originalPoints.map(p => p.x),
-        y: originalPoints.map(p => p.y),
-        mode: "markers",
+    // Окно отсечения
+    data.push({
+      x: [clipWindow.xMin, clipWindow.xMax, clipWindow.xMax, clipWindow.xMin, clipWindow.xMin],
+      y: [clipWindow.yMin, clipWindow.yMin, clipWindow.yMax, clipWindow.yMax, clipWindow.yMin],
+      type: "scatter",
+      mode: "lines",
+      name: "Окно",
+      line: { color: "green", dash: "dot" },
+    });
+
+    // Все отрезки
+    segments.forEach((seg, idx) =>
+      data.push({
+        x: [seg.p1.x, seg.p2.x],
+        y: [seg.p1.y, seg.p2.y],
         type: "scatter",
-        name: "Исходные точки",
-        marker: { size: 12, color: "#ff0000" }
-      },
-      {
-        x: [...hullPoints.map(p => p.x), hullPoints[0]?.x],
-        y: [...hullPoints.map(p => p.y), hullPoints[0]?.y],
         mode: "lines+markers",
+        name: `Отрезок ${idx + 1}`,
+        line: { color: "red" },
+        marker: { color: "red" },
+      })
+    );
+
+    // Отсечённые отрезки
+    clippedSegments.forEach((seg, idx) =>
+      data.push({
+        x: [seg.p1.x, seg.p2.x],
+        y: [seg.p1.y, seg.p2.y],
         type: "scatter",
-        name: "Полигон",
-        line: { color: polygonType === "convex" ? "#2196F3" : "#FF5722", width: 3 }
-      },
-      {
-        x: [clipWindow.x1, clipWindow.x2, clipWindow.x2, clipWindow.x1, clipWindow.x1],
-        y: [clipWindow.y1, clipWindow.y1, clipWindow.y2, clipWindow.y2, clipWindow.y1],
         mode: "lines",
-        type: "scatter",
-        name: "Окно отсечения",
-        line: { color: "#00ff00", dash: "dot" }
-      }
-    ];
+        name: `Отсечённый ${idx + 1}`,
+        line: { color: "blue", width: 4 },
+      })
+    );
+
+    return data;
   };
 
   return (
@@ -145,89 +150,39 @@ const Transform2D = () => {
         ref={plotRef}
         data={generatePlotData()}
         layout={{
-          width: 600,
-          height: 400,
-          title: "2D Отсечение полигонов",
+          width: 700,
+          height: 500,
+          title: "Отсечение отрезков",
           xaxis: { range: [0, 10] },
-          yaxis: { range: [0, 10], scaleanchor: "x" }
+          yaxis: { range: [0, 10], scaleanchor: "x" },
         }}
-        config={{ displayModeBar: false }}
       />
 
-      <div style={{ marginTop: 20, display: "flex", flexWrap: "wrap", gap: 10 }}>
-        <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-          <input
-            type="number"
-            step="0.1"
-            min="0"
-            max="10"
-            placeholder="X (0-10)"
-            value={inputCoords.x}
-            onChange={e => setInputCoords(p => ({...p, x: e.target.value}))}
-            style={{ width: 100, padding: "5px" }}
-          />
-          <input
-            type="number"
-            step="0.1"
-            min="0"
-            max="10"
-            placeholder="Y (0-10)"
-            value={inputCoords.y}
-            onChange={e => setInputCoords(p => ({...p, y: e.target.value}))}
-            style={{ width: 100, padding: "5px" }}
-          />
-          <button 
-            onClick={handleAddPoint}
-            style={{ background: "#4CAF50", color: "white", padding: "8px 16px" }}
-          >
-            Добавить
-          </button>
-        </div>
-
-        <select
-          value={polygonType}
-          onChange={(e) => setPolygonType(e.target.value)}
-          style={{ padding: "8px 16px", borderRadius: 4 }}
-        >
-          <option value="convex">Выпуклый</option>
-          <option value="concave">Вогнутый</option>
-        </select>
-
-        <button
-          onClick={buildPolygon}
-          style={{ background: "#2196F3", color: "white", padding: "8px 16px" }}
-        >
-          Построить полигон
-        </button>
-
-        <button
-          onClick={cohenSutherlandClip}
-          style={{ background: "#E91E63", color: "white", padding: "8px 16px" }}
-        >
-          Отсечь
-        </button>
-
-        <button
-          onClick={() => {
-            setOriginalPoints([]);
-            setHullPoints([]);
-          }}
-          style={{ background: "#f44336", color: "white", padding: "8px 16px" }}
-        >
-          Очистить
-        </button>
+      <div style={{ marginTop: 20, display: "flex", gap: 10 }}>
+        <input
+          type="number"
+          step="0.1"
+          min="0"
+          max="10"
+          placeholder="X"
+          value={inputCoords.x}
+          onChange={(e) => setInputCoords((p) => ({ ...p, x: e.target.value }))}
+        />
+        <input
+          type="number"
+          step="0.1"
+          min="0"
+          max="10"
+          placeholder="Y"
+          value={inputCoords.y}
+          onChange={(e) => setInputCoords((p) => ({ ...p, y: e.target.value }))}
+        />
+        <button onClick={handleAddPoint}>Добавить точку</button>
+        <button onClick={clipAllSegments}>Отсечь</button>
+        <button onClick={resetAll}>Сброс</button>
       </div>
 
-      <div style={{ 
-        marginTop: 15,
-        padding: 10,
-        color: "black",
-        background: "#f8f9fa",
-        borderRadius: 5,
-        minHeight: 40
-      }}>
-        {status || "Готово к работе..."}
-      </div>
+      <div style={{ marginTop: 10, fontWeight: "bold" }}>{status}</div>
     </div>
   );
 };

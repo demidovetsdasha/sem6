@@ -1,0 +1,26 @@
+[
+  {
+    "sender": "user",
+    "message": "Hello. What is your name"
+  },
+  {
+    "sender": "gpt",
+    "message": "Question not related to animals. Try again"
+  },
+  {
+    "sender": "user",
+    "message": "what is the most popular animal?"
+  },
+  {
+    "sender": "gpt",
+    "message": "That depends on how you define \"popular.\" Are you thinking about popularity as in \"most commonly known,\" \"most beloved as a pet,\" or maybe \"most numerous in the wild\"? Here's a quick breakdown:\n\n- **As pets:** Dogs and cats fight for the top spot. In some countries, dogs win; in others, cats reign supreme. Goldfish are also up there in terms of sheer numbers.\n- **In culture and mythology:** Lions, eagles, and wolves are everywhere—as symbols, mascots, and legends.\n- **Most numerous:** The Antarctic krill is one of the most abundant animals by biomass. Chickens are the most common bird by population, thanks to farming.\n- **Most searched/featured online:** Cats tend to dominate memes and videos. There’s even scientific research around our obsession with cat content.\n\nDid you have a specific type of popularity in mind?"
+  },
+  {
+    "sender": "user",
+    "message": "what is the most popular animal?"
+  },
+  {
+    "sender": "gpt",
+    "message": "That depends on how you define \"popular.\" Are you thinking about popularity as in \"most commonly known,\" \"most beloved as a pet,\" or maybe \"most numerous in the wild\"? Here's a quick breakdown:\n\n- **As pets:** Dogs and cats fight for the top spot. In some countries, dogs win; in others, cats reign supreme. Goldfish are also up there in terms of sheer numbers.\n- **In culture and mythology:** Lions, eagles, and wolves are everywhere—as symbols, mascots, and legends.\n- **Most numerous:** The Antarctic krill is one of the most abundant animals by biomass. Chickens are the most common bird by population, thanks to farming.\n- **Most searched/featured online:** Cats tend to dominate memes and videos. There’s even scientific research around our obsession with cat content.\n\nDid you have a specific type of popularity in mind?"
+  }
+]
